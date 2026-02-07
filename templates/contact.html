@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="page-hero">
+  <div>
+    <p class="eyebrow">Contact</p>
+    <h1>Let&apos;s connect</h1>
+  </div>
+  <p>
+    Whether it&apos;s a new analytics project, research collaboration, or data storytelling request,
+    I&apos;d love to hear from you.
+  </p>
+</section>
+
+<section class="section contact-section">
+  <form class="contact-form" method="post" action="{{ url_for('contact') }}">
+    <label>
+      Full Name
+      <input type="text" name="name" placeholder="Your name" required />
+    </label>
+    <label>
+      Email Address
+      <input type="email" name="email" placeholder="you@email.com" required />
+    </label>
+    <label>
+      Message
+      <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+    </label>
+    <button class="btn primary" type="submit">Send Message</button>
+    {% if status_message %}
+    <p class="form-status">{{ status_message }}</p>
+    {% endif %}
+  </form>
+
+  <div class="contact-details">
+    <h3>Reach me directly</h3>
+    <p>Based in Sri Lanka · Open to remote collaboration</p>
+    <div class="contact-links">
+      <a href="mailto:randima.alexander@email.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+      <a href="https://x.com" target="_blank" rel="noreferrer">
+        <i class="fa-brands fa-x-twitter"></i> X (Twitter)
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}
