@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskilla — Data Meets Creativity</title>
+    <meta
+      name="description"
+      content="Taskilla helps brands grow with data-driven marketing and high-impact digital content."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav" id="top">
+      <div class="container nav-inner">
+        <a class="brand" href="#top" aria-label="Taskilla home">
+          <img
+            src="https://miaoda-edit-image.s3cdn.medo.dev/b6fmq0wuv9j5/IMG-b6ge772np79c.png"
+            alt="Taskilla logo"
+          />
+          <span>Taskilla</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <nav class="links" aria-label="Main navigation">
+          <a href="#services">Services</a>
+          <a href="#philosophy">Philosophy</a>
+          <a href="#work">Work</a>
+          <a class="btn btn-primary" href="#contact">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Future of Digital Growth</p>
+          <h1>Elevate Your Brand <span>With Data Mastery</span></h1>
+          <p class="subtitle">
+            Helping brands grow with data-driven marketing and high-impact digital content.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#services">Start Your Growth</a>
+            <a class="btn btn-ghost" href="#work">View Our Work</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section container">
+        <h2>What We Do</h2>
+        <div class="grid services">
+          <article class="card">
+            <h3>Content</h3>
+            <p>Engaging storytelling and high-impact visual assets that resonate with your audience.</p>
+          </article>
+          <article class="card">
+            <h3>Branding</h3>
+            <p>Cohesive brand identities that communicate your core values and stand out.</p>
+          </article>
+          <article class="card">
+            <h3>Growth</h3>
+            <p>Scalable marketing strategies powered by advanced analytics and performance metrics.</p>
+          </article>
+          <article class="card">
+            <h3>Strategy</h3>
+            <p>Future-proof roadmaps designed to navigate the complex digital landscape.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="philosophy" class="section alt">
+        <div class="container split">
+          <div>
+            <h2>Data Meets <span>Creativity</span></h2>
+            <p>
+              At Taskilla, we believe that pure data is cold, and pure creativity is blind. We merge both to
+              build experiences that are beautiful and effective.
+            </p>
+            <ul>
+              <li><strong>Insights-Driven Design:</strong> Every pixel has a purpose backed by data.</li>
+              <li><strong>Creative Agility:</strong> Adapting at the speed of digital trends.</li>
+              <li><strong>Proven Results:</strong> Consistent growth for brands of all sizes.</li>
+            </ul>
+          </div>
+          <div class="ring" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="work" class="section container">
+        <h2>Our Work</h2>
+        <div class="grid projects">
+          <article class="project">
+            <img src="https://miaoda-site-img.s3cdn.medo.dev/images/KLing_d4bb5348-0970-413e-b472-b0b99d095c5e.jpg" alt="NeuraLink App" />
+            <div class="project-meta"><h3>NeuraLink App</h3><p>Product Design</p></div>
+          </article>
+          <article class="project">
+            <img src="https://miaoda-site-img.s3cdn.medo.dev/images/KLing_55d2b629-ea26-4c25-848c-64643aedd1bf.jpg" alt="Quantum Flux" />
+            <div class="project-meta"><h3>Quantum Flux</h3><p>Branding</p></div>
+          </article>
+          <article class="project">
+            <img src="https://miaoda-site-img.s3cdn.medo.dev/images/KLing_68feac77-ef4f-45b5-b752-f6ad4d81fb54.jpg" alt="Vortex Media" />
+            <div class="project-meta"><h3>Vortex Media</h3><p>Marketing</p></div>
+          </article>
+          <article class="project">
+            <img src="https://miaoda-site-img.s3cdn.medo.dev/images/KLing_76d21775-80a5-457c-9579-7a2976f59a0d.jpg" alt="Astra Cloud" />
+            <div class="project-meta"><h3>Astra Cloud</h3><p>Strategy</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container cta">
+          <h2>Let's Build Your <span>Brand's Future</span></h2>
+          <p>
+            Ready to take your brand to the next level? Our team is ready to help you navigate the future of
+            digital growth.
+          </p>
+          <button id="contactBtn" class="btn btn-primary">Get in Touch</button>
+          <p class="toast" id="toast" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Taskilla. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
